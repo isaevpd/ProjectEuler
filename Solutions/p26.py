@@ -1,11 +1,11 @@
 def divide(n):
-    divide_by = list()
+    divide_by = set()
     start = 1
     while start != 0 and not start in divide_by:
         if start < n:
             start *= 10 
         else:
-            divide_by.append(start)
+            divide_by.add(start)
             start = start % n
     return len(divide_by)
 
