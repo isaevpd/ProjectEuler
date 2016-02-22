@@ -6,7 +6,7 @@ def divide(n):
             start *= 10 
         else:
             divide_by.add(start)
-            start = start % n
+            start %= n
     return len(divide_by)
 
 
